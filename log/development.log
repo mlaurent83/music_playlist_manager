@@ -344,3 +344,28 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1036)
 
 
+Started GET "/users" for 127.0.0.1 at 2024-10-07 14:16:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-07 14:16:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/playlists" for 127.0.0.1 at 2024-10-07 14:17:07 +0100
+  
+ActionController::RoutingError (uninitialized constant PlaylistsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2024-10-07 14:19:29 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 287)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1041)
+
+
