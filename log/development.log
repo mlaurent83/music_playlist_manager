@@ -369,3 +369,10 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1041)
 
 
+Started GET "/" for 127.0.0.1 at 2024-10-07 14:27:33 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 291)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1045)
+
+
