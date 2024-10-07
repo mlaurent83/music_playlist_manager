@@ -1,1 +1,10 @@
 <h1>All our playlists!</h1>
+<% if @playlists.any? %>
+  <ul>
+    <% @playlists.each do |playlist| %>
+      <li><%= playlist.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No playlists available.</p>
+<% end %>
