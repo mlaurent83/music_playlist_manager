@@ -507,3 +507,16 @@ Processing by UsersController#index as HTML
 Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 47)
 
 
+Started GET "/" for 127.0.0.1 at 2024-10-08 13:19:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mlaurent/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 386)
+Completed 200 OK in 28ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4727)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-10-08 13:19:21 +0100
+Processing by UsersController#index as HTML
+Completed 204 No Content in 45ms (ActiveRecord: 0.0ms | Allocations: 10043)
+
+
