@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    Rails.logger.debug "Users loaded: #{@users.inspect}"
   end
 
   def show
