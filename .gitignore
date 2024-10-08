@@ -5,3 +5,6 @@ log/*
 # Ignore temporary files
 tmp/pids/*
 tmp/cache/*
+
+# Ignore Bootsnap cache files
+tmp/cache/bootsnap/
