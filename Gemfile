@@ -36,7 +36,6 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 gem "bootstrap", "~> 5.2"
-gem "devise"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
@@ -54,4 +53,3 @@ group :development do
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
-
