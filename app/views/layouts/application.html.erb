@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playlist Manager</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= javascript_importmap_tags %> <!-- Include Importmap JavaScript tags -->
+    <%= javascript_importmap_tags %>
+</head>
+
+<body>
+  <%= yield %> <!-- This is where your views will be rendered -->
+</body>
+</html>
