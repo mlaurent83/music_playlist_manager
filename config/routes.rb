@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :playlists do
     resources :songs
   end
+  resources :songs, only: [:index]
 
   # Defines the root path route ("/")
   # root "posts#index"
