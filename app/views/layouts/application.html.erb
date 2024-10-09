@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Playlist Manager</title>
+  <title>Music Playlist Manager</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-  <%= javascript_importmap_tags %> <!-- Ensure this line is included -->
-  <%= javascript_pack_tag 'application' %> <!-- If using Webpacker, include it as well -->
+  <%= javascript_importmap_tags %> <!-- Add this line -->
+  <!-- Other tags -->
 </head>
-
 <body>
   <%= yield %>
 </body>

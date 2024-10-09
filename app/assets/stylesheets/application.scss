@@ -5,14 +5,10 @@
 
 // External libraries
 @import "bootstrap";
-@import "font-awesome";
+
+// Import Font Awesome
+@import "font-awesome"; // Main Font Awesome styles
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
-// Import Font Awesome
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid"; // For solid icons
-@import "~@fortawesome/fontawesome-free/scss/regular"; // For regular icons (if needed)
-@import "~@fortawesome/fontawesome-free/scss/brands"; // For brand icons (if needed)
