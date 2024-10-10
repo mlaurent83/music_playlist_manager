@@ -1,10 +1,9 @@
-<%= javascript_importmap_tags %> <!-- Correctly include Importmap tags -->
-<div id="song-list"></div> <!-- This is where the React component will be rendered -->
-<script type="module">
-  import React from 'react';
-  import ReactDOM from 'react-dom/client';
-  import SongList from '../components/SongList'; // Adjust the path if necessary
+<div id="react-songs-list"></div>
 
-  const root = ReactDOM.createRoot(document.getElementById('song-list'));
-  root.render(<SongList />);
+<%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %> <!-- Loads the JavaScript bundle -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // JavaScript code to be run on DOMContentLoaded, if needed
+  });
 </script>

@@ -1,3 +1,4 @@
+// app/javascript/components/SongList.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -6,10 +7,9 @@ const SongList = () => {
 
   useEffect(() => {
     const fetchSongs = async () => {
-      const response = await axios.get('/api/songs'); // Adjust to your API endpoint
+      const response = await axios.get('/api/songs'); // Adjust API endpoint as needed
       setSongs(response.data);
     };
-
     fetchSongs();
   }, []);
 
