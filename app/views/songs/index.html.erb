@@ -1,9 +1,2 @@
 <div id="react-songs-list"></div>
-
-<%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %> <!-- Loads the JavaScript bundle -->
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // JavaScript code to be run on DOMContentLoaded, if needed
-  });
-</script>
+<%= javascript_include_tag 'application', 'data-turbo-track': 'reload', type: 'module' %>

@@ -1,17 +1,11 @@
-// app/javascript/components/SongList.js
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 const SongList = () => {
-  const [songs, setSongs] = useState([]);
-
-  useEffect(() => {
-    const fetchSongs = async () => {
-      const response = await axios.get('/api/songs'); // Adjust API endpoint as needed
-      setSongs(response.data);
-    };
-    fetchSongs();
-  }, []);
+  // Static sample data for testing
+  const songs = [
+    { id: 1, title: "Song One", artist: "Artist A" },
+    { id: 2, title: "Song Two", artist: "Artist B" },
+  ];
 
   return (
     <div>

@@ -4,11 +4,25 @@
   <title>Music Playlist Manager</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-  <%= javascript_importmap_tags %> <!-- Add this line -->
-  <!-- Other tags -->
+
+  <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+
+  <script type="importmap" data-turbo-track="reload">
+    {
+      "imports": {
+        "application": "/assets/application.js",
+        "react": "/assets/react.js",
+        "react-dom": "/assets/react-dom.js",
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      }
+    }
+  </script>
+  <script type="module" data-turbo-track="reload">
+    import "application";
+  </script>
 </head>
 <body>
-  <%= yield %>
+  <h1>Songs</h1>
+  <div id="react-songs-list"></div>
 </body>
 </html>
