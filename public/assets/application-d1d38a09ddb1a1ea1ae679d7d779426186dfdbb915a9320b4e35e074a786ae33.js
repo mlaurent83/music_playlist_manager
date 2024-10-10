@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'; // Use the correct import for React 18
-import SongList from './components/SongList'; // Ensure this path is correct
+import SongList from './components/SongList'; // Make sure the path is correct
 
 document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('react-songs-list');

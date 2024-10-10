@@ -1,6 +1,6 @@
 # Pin npm packages by running ./bin/importmap
 
-pin 'application', to: 'application.js'
+pin "application", to: "application.js"
 pin "react", to: "https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"
 pin "react-dom", to: "https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"
 
